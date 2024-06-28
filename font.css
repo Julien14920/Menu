@@ -71,3 +71,14 @@ body {
         background-color: #f1f1f1;
     }
     
+    .top-left-button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
