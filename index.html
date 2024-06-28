@@ -3,46 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
+    <link rel="script" href="animation.js">
     <title>Carte du Restaurant</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        .menu {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .menu h1 {
-            text-align: center;
-        }
-        .menu-section {
-            margin-bottom: 20px;
-        }
-        .menu-section h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-        }
-        .menu-item:nth-child(even) {
-            background-color: #f0f0f0;
-        }
-        .menu-item img {
-            max-width: 100px;
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body>
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+            <img src="menu-icon.png" alt="Menu">
+        </button>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Entrées</a>
+            <a href="#">Plats</a>
+            <a href="#">Dessert</a>
+        </div>
+    </div>
+    <script src="animation.js"></script>
     <div class="menu">
         <h1>Carte du Restaurant</h1>
         
@@ -89,4 +65,5 @@
         </div>
     </div>
 </body>
+
 </html>
