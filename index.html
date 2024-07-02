@@ -3,68 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font.css">
-    <link rel="script" href="animation.js">
-    <title>Carte du Restaurant</title>
+    <title>Mon Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button class="top-left-button">Click me!</button>
-    <div class="menu-container">
-        <button class="menu-button" onclick="toggleMenu()">
-            <img src="menu-icon.png" alt="Menu">
-        </button>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <a href="#">Entrées</a>
-            <a href="#">Plats</a>
-            <a href="#">Dessert</a>
+    <header>
+        <img src="logorestaurant.jpg" alt="Logo du restaurant" class="logo">
+        <div class="burger-menu" id="burgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
+    </header>
+    <main>
+        <div class="container">
+        <img src="lepetitbistrotrestaurant.jpg" alt="Photo de mon restaurant" class="background-image">
+        <div class="overlay">
+            <h1 class="restaurant-name">Le Petit Bistrot</h1>
+            <button class="menu-button" onclick="location.href='menu.html'">Menu</button>
+        </div>
+    </main>
+    <footer>
+        <div class="social-links left">
+            <a href="https://www.instagram.com/juwake14/" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
+            <a href="https://www.facebook.com/julien.hee.7" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="social-links right">
+            <a href="https://www.google.com" target="_blank"><img src="google.jpg" alt="Google"></a>
+            <a href="https://www.tripadvisor.fr/Restaurant_Review-g1939770-d4586740-Reviews-Au_Pere_Tranquille-Bernieres_sur_Mer_Calvados_Basse_Normandie_Normandy.html" target="_blank"><img src="tripadvisor.png" alt="Tripadvisor"></a>
+        </div>
+    </footer>
+    <div class="menu-content" id="menuContent">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        
     </div>
-    <script src="animation.js"></script>
-    <div class="menu">
-        <h1>Carte du Restaurant</h1>
-        
-        <div class="menu-section">
-            <h2>Entrées</h2>
-            <div class="menu-item">
-                <img src="salade-cesar.jpg" alt="Salade César">
-                <span>Salade César</span>
-                <span>12€</span>
-            </div>
-            <div class="menu-item">
-                <img src="soupe-oignon.jpg" alt="Soupe à l'oignon">
-                <span>Soupe à l'oignon</span>
-                <span>8€</span>
-            </div>
-        </div>
-        
-        <div class="menu-section">
-            <h2>Plats Principaux</h2>
-            <div class="menu-item">
-                <img src="steak-frites.jpg" alt="Steak Frites">
-                <span>Steak Frites</span>
-                <span>18€</span>
-            </div>
-            <div class="menu-item">
-                <img src="poulet-roti.jpg" alt="Poulet Rôti">
-                <span>Poulet Rôti</span>
-                <span>16€</span>
-            </div>
-        </div>
-        
-        <div class="menu-section">
-            <h2>Desserts</h2>
-            <div class="menu-item">
-                <img src="tarte-pommes.jpg" alt="Tarte aux Pommes">
-                <span>Tarte aux Pommes</span>
-                <span>7€</span>
-            </div>
-            <div class="menu-item">
-                <img src="mousse-chocolat.jpeg" alt="Mousse au Chocolat">
-                <span>Mousse au Chocolat</span>
-                <span>6€</span>
-            </div>
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
