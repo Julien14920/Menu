@@ -46,16 +46,16 @@ header {
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background-color: rgba(255, 255, 255, 0.767);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 1;
 }
 
-.logo {
-    height: 40px;
-    margin: 20px;
+.titre {
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script';
 }
 
 .burger-menu {
@@ -71,7 +71,7 @@ header {
 .burger-menu .line {
     height: 4px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .menu-content {
@@ -110,32 +110,23 @@ header {
     cursor: pointer;
 }
 
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.13);
-    z-index: 1;
-}
 
 .social-links img {
     width: 40px;
     height: 40px;
-    margin: 0 8px;
+    margin-bottom: 15%;
 }
 
-.left {
+.social-links {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    margin-top: 3%;
+    margin-left: 83%;
+    z-index: 1;
 }
 
-.right {
-    display: flex;
-    align-items: flex-end;
-}
 
 .menu-button {
     padding: 10px 30px;
@@ -153,5 +144,5 @@ footer {
 
 .menu-button:hover {
     background-color: #575d69;
-    transform: scale(2); /* Augmente légèrement la taille au survol */
+    transform: scale(1.5); /* Augmente légèrement la taille au survol */
 }
